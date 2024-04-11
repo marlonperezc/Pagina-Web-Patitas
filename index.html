@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    
+</head>
+<body>
+
+<header class="header" id="inicio"> 
+    <div class="static-menu">
+        <div class="menu container">
+   
+            <img src="Imagenes/logo patitas.svg" alt="" width="42" height="42">
+            <a href="#" class="logo">MisPatitas</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#gatos">Gatos</a></li>
+                    <li><a href="#perros">Perros</a></li>
+                    <li><a href="#equinos">Equinos</a></li>
+                    <li><a href="#aves">Aves</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#sobrenosotros">Sobre nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#tucarrito">Tu carrito</a></li>
+                     
+                </ul>
+        
+                
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img id="img-carrito" src="Imagenes/bolsa.svg" alt="car"  width="64" height="64">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</header>
+<div class="fill-100">
+    <div class="header-content container">
+        <div class="header-txt">
+            <span>Bienvenido a nuestra tienda online "Patitas Vet Shop"</span>
+            <h1>Ofertas Especiales</h1>
+            <p>
+                ¡Ofertas irresistibles para mantener a tu mascota feliz y saludable!
+    
+            </p>
+            <div class="butons">
+                <a href="#ofertas" class="btn-1">informacion</a>
+                <a href="#" class="btn-1">leer mas</a>
+            </div>
+        </div>
+        <div class="header-img">
+            <img src="Imagenes/COMBOS.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+<section class="oferts container">
+
+    <div class="ofert-1 b1">
+        <div class="ofert-txt">
+            <h3>Comida en choquetas para perros adultos </h3>
+            <a href="#ofertas">leer mas</a>
+        </div>
+        <div>
+            <img src="Imagenes/PERROS RINGO.png" alt="">
+        </div>
+    </div>
+
+    <div class="ofert-1 b2">
+        <div class="ofert-txt">
+            <h3>comida para gatos en croquetas Mirringo</h3>
+            <a href="#ofertas">leer mas</a>
+        </div>
+        <div>
+            <img src="Imagenes/GATOS MIRRINGO.png" alt="">
+        </div>
+    </div>
+
+    <div class="ofert-1 b3">
+        <div class="ofert-txt">
+            <h3>Arena para gatos Lavanda aroma a calabaza</h3>
+            <a href="#ofertas">leer mas</a>
+        </div>
+        <div>
+            <img src="Imagenes/GATOS ARENA.png" alt="">
+        </div>
+    </div>
+
+    
+        
+    </div>
+
+</section>
+
+<main class="products container">
+
+    <div class="gatos section">
+        <h2>Gatos</h2>
+
+        <div class="box-container" id="gatos">
+            <div class="box">
+                <img src="Imagenes/GATOS SHOW.png" alt="">
+                <div class="product-txt">
+                    <h3>Purina humeda Kat Show</h3>
+                    <p>¡Un alimento de calidad para tu mascota!</p>
+                    <p class="Precio">$30000</p>
+                    <button class="agregar-carrito btn-3" data-id="1">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/GATOS KAT.png" alt="">
+                <div class="product-txt">
+                    <h3>Purina Don Kat</h3>
+                    <p>¡Buena nutricion para autenticos gatos!</p>
+                    <p class="Precio">$6000</p>
+                    <button class="agregar-carrito btn-3" data-id="2">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/GATOS MIRRINGO.png" alt="">
+                <div class="product-txt">
+                    <h3>Purina Mirringo</h3>
+                    <p>mirringo purina para felinos adultos</p>
+                    <p class="Precio">$7500</p>
+                    <button class="agregar-carrito btn-3" data-id="3">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/GATOS ARENA.png" alt="">
+                <div class="product-txt">
+                    <h3>Arena para gatos</h3>
+                    <p>cuida de los malos olores con arena lavanda</p>
+                    <p class="Precio">$25000</p>
+                    <button class="agregar-carrito btn-3" data-id="4">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/GATOS CAMA.png" alt="">
+                <div class="product-txt">
+                    <h3>Cama rog</h3>
+                    <p>dale un descanso adecuado a tu mascota</p>
+                    <p class="Precio">$35000</p>
+                    <button class="agregar-carrito btn-3" data-id="5">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/GATOS CEPILLO.png" alt="">
+                <div class="product-txt">
+                    <h3>Cepillo Gatos</h3>
+                    <p>Dale un cuidado especial a tu mascota</p>
+                    <p class="Precio">$15000</p>
+                    <button class="agregar-carrito btn-3" data-id="6">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="perros section">
+        <h2>Perros</h2>
+
+        <div class="box-container" id="perros">
+            <div class="box">
+                <img src="Imagenes/PERROS COLLAR.png" alt="">
+                <div class="product-txt">
+                    <h3>Collar de acero inoxidable</h3>
+                    <p>¡Un producto resistente y de calidad!</p>
+                    <p class="Precio">$30000</p>
+                    <button class="agregar-carrito btn-3" data-id="1">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/PERROS DOG SHOW.png" alt="">
+                <div class="product-txt">
+                    <h3>Purina Dog Show</h3>
+                    <p>¡Buena nutricion para autenticos Perros!</p>
+                    <p class="Precio">$70000</p>
+                    <button class="agregar-carrito btn-3" data-id="2">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/PERROS RINGO.png" alt="">
+                <div class="product-txt">
+                    <h3>Purina Ringo</h3>
+                    <p>Ringo purina para perros adultos 1 bulto</p>
+                    <p class="Precio">$80000</p>
+                    <button class="agregar-carrito btn-3" data-id="3">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/PERROS COMEDERO.png" alt="">
+                <div class="product-txt">
+                    <h3>Comedero  inoxidable</h3>
+                    <p>Producto resistente para perros traviesos</p>
+                    <p class="Precio">$15000</p>
+                    <button class="agregar-carrito btn-3" data-id="4">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/PERROS JABON.png" alt="">
+                <div class="product-txt">
+                    <h3>Jabon Antipulgas</h3>
+                    <p>Jabon antipulgas y garrapatas para perros asuntol</p>
+                    <p class="Precio">$7000</p>
+                    <button class="agregar-carrito btn-3" data-id="5">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/PERROS UÑAS.png" alt="">
+                <div class="product-txt">
+                    <h3>Cortauñas perros</h3>
+                    <p>¡Cortar las uñas ya no será un problema!</p>
+                    <p class="Precio">$15000</p>
+                    <button class="agregar-carrito btn-3" data-id="6">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="equinos section">
+        <h2>Equinos</h2>
+
+        <div class="box-container" id="equinos">
+            <div class="box">
+                <img src="Imagenes/EQUINOS ANTIHEMORRAGIA.png" alt="">
+                <div class="product-txt">
+                    <h3>Vitamina antihemorragia</h3>
+                    <p>Vitamina K VIitalikc 10 ml</p>
+                    <p class="Precio">$11000</p>
+                    <button class="agregar-carrito btn-3" data-id="1">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/EQUINOS VITAMINA.png" alt="">
+                <div class="product-txt">
+                    <h3>Vitamina Emonil 550ml</h3>
+                    <p>Hemomil 600 Frasco 550 ml</p>
+                    <p class="Precio">$160000</p>
+                    <button class="agregar-carrito btn-3" data-id="2">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/EQUINOS ALFA.png" alt="">
+                <div class="product-txt">
+                    <h3>Pomada Alfa 220g</h3>
+                    <p>Pomada para espasmos 220g</p>
+                    <p class="Precio">$30000</p>
+                    <button class="agregar-carrito btn-3" data-id="3">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/EQUINOS ALFA 2.png" alt="">
+                <div class="product-txt">
+                    <h3>Pomada Alfa 350g</h3>
+                    <p>Pomada para espasmos 350g</p>
+                    <p class="Precio">$40000</p>
+                    <button class="agregar-carrito btn-3" data-id="4">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/EQUINOS CREMA.png" alt="">
+                <div class="product-txt">
+                    <h3>Cutamycon crema</h3>
+                    <p>Cutamycon crema VF. 100 gr</p>
+                    <p class="Precio">$37000</p>
+                    <button class="agregar-carrito btn-3" data-id="5">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/EQUINOS LOCION.png" alt="">
+                <div class="product-txt">
+                    <h3>Cutamycon locion</h3>
+                    <p>Cutamycon Loción. 100 ml</p>
+                    <p class="Precio">$35000</p>
+                    <button class="agregar-carrito btn-3" data-id="6">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Aves section">
+        <h2>Aves</h2>
+
+        <div class="box-container" id="aves">
+            <div class="box">
+                <img src="Imagenes/AVES ANTIANEMICO.png" alt="">
+                <div class="product-txt">
+                    <h3>Gotas Antianemia</h3>
+                    <p>Ornifer S Gotas 10 ml</p>
+                    <p class="Precio">$20000</p>
+                    <button class="agregar-carrito btn-3" data-id="1">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/AVES VITAMINAS.png" alt="">
+                <div class="product-txt">
+                    <h3>Gotas con vitaminas</h3>
+                    <p>Ornivit S Gotas 10 ml</p>
+                    <p class="Precio">$14000</p>
+                    <button class="agregar-carrito btn-3" data-id="2">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/AVES COMIDA.png" alt="">
+                <div class="product-txt">
+                    <h3>Piamontina</h3>
+                    <p>Alimento para loros y canarios</p>
+                    <p class="Precio">$8000</p>
+                    <button class="agregar-carrito btn-3" data-id="3">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/AVES COMIDA 1.png" alt="">
+                <div class="product-txt">
+                    <h3>Nabo</h3>
+                    <p>Nabo 450 g</p>
+                    <p class="Precio">$8500</p>
+                    <button class="agregar-carrito btn-3" data-id="4">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/AVES JAULA.png" alt="">
+                <div class="product-txt">
+                    <h3>Jaula Aves Ibiza </h3>
+                    <p>Jaula aves 49.5 x 30 x 69 cm</p>
+                    <p class="Precio">$420000</p>
+                    <button class="agregar-carrito btn-3" data-id="5">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/AVES JAULA MINI.png" alt="">
+                <div class="product-txt">
+                    <h3>Jaula para aves Mini</h3>
+                    <p>Jaula Aves 43.5 x 68.5 cm</p>
+                    <p class="Precio">$380000</p>
+                    <button class="agregar-carrito btn-3" data-id="6">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Ofertas section">
+        <h2>Ofertas</h2>
+
+        <div class="box-container" id="ofertas">
+            <div class="box">
+                <img src="Imagenes/PERROS RINGO.png" alt="">
+                <div class="product-txt">
+                    <h3>Purina Ringo</h3>
+                    <p>purina de alta calidad para perros adultos</p>
+                    <p class="Precio">$75000</p>
+                    <button class="agregar-carrito btn-3" data-id="1">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/GATOS MIRRINGO.png" alt="">
+                <div class="product-txt">
+                    <h3>purina Mirringo</h3>
+                    <p>purina de alta calidad para gatos adultos</p>
+                    <p class="Precio">$6500</p>
+                    <button class="agregar-carrito btn-3" data-id="2">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/GATOS ARENA.png" alt="">
+                <div class="product-txt">
+                    <h3>Arena Lavanda</h3>
+                    <p>Arena para gatos, cuida de los malos olores</p>
+                    <p class="Precio">$20000</p>
+                    <button class="agregar-carrito btn-3" data-id="3">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/AVES COMIDA 1.png" alt="">
+                <div class="product-txt">
+                    <h3>Nabo</h3>
+                    <p>Nabo 450 g</p>
+                    <p class="Precio">$6500</p>
+                    <button class="agregar-carrito btn-3" data-id="4">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/EQUINOS ALFA.png" alt="">
+                <div class="product-txt">
+                    <h3>Pomada alfa 220g </h3>
+                    <p>Pomada para espasmos 220g</p>
+                    <p class="Precio">$26000</p>
+                    <button class="agregar-carrito btn-3" data-id="5">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Imagenes/GATOS CAMA.png" alt="">
+                <div class="product-txt">
+                    <h3>Cama para gatos rog</h3>
+                    <p>Un descanso ideal</p>
+                    <p class="Precio">$30000</p>
+                    <button class="agregar-carrito btn-3" data-id="6">
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sobrenosotros section">
+        <h2>Sobre nosotros</h2>
+
+        <div class="box-container" id="sobrenosotros">
+
+            <div class="box">
+                <img src="Imagenes/VET.jpg" alt="">
+                <div class="product-txt">
+                    <h3>Mis patitas vet Shop</h3>
+                    <p>Nuestro viaje comenzó hace una década, en el corazón de una comunidad vibrante, donde los animales son considerados miembros valiosos de cada familia. 
+                        Fundada por dos apasionados veterinarios, nuestra clínica nació de un sueño compartido: brindar atención médica excepcional a las mascotas y apoyo
+                         incondicional a los dueños de animales, independientemente de su origen o situación económica. Desde nuestros humildes comienzos en un pequeño local, 
+                         hemos crecido gracias a la confianza y el apoyo de nuestra comunidad, manteniendo siempre el bienestar animal como nuestra máxima prioridad.
+                        </p>
+                        <p>En el corazón de nuestra misión está el compromiso de devolver a la comunidad que nos ha dado tanto. Participamos activamente en iniciativas para apoyar 
+                            a animales sin hogar, colaborando con refugios locales para ofrecer tratamientos médicos esenciales a los animales de la calle, y lanzando programas de 
+                            castración y esterilización a bajo costo para controlar de manera ética la población de mascotas. Además, estamos orgullosos de trabajar mano a mano con 
+                            pequeños y grandes campesinos de la zona, ofreciéndoles servicios veterinarios accesibles y educación sobre el cuidado animal, asegurando así que el vínculo 
+                            entre los animales y nuestras comunidades se mantenga fuerte y saludable. Esta historia es la nuestra, pero está tejida con miles de historias de amor, 
+                            resiliencia y cuidado compartido, historias de aquellos que, como nosotros, creen en hacer del mundo un lugar mejor para todos los seres vivos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<section class="testimonial container">
+    <span>Testimoniales</span>
+    <h2>Que opinan nuestros clientes</h2>
+    <div class="testimonial-content">
+        <div class="testimonial-1">
+            <h4>Andrea Gomez</h4>
+            <img src="Imagenes/WOMAN.jpg" alt="" class="img-1" width="200" height="300">
+            <p>
+                Visité la clínica con mi perro, quien necesitaba atención urgente, y quedé asombrada por el nivel de cuidado y compasión que recibimos. Desde el momento en que entramos, 
+                el personal nos hizo sentir como en casa, y el veterinario se tomó el tiempo para explicarnos detalladamente el tratamiento. Lo que realmente me tocó el corazón fue cómo 
+                se esfuerzan por ayudar a los animales de la calle y su apoyo a la comunidad agrícola local. ¡Es más que una clínica veterinaria; es un faro de esperanza para todos los 
+                amantes de los animales!.
+            </p>
+            <img src="Imagenes/starts.png" alt="" class="img-1">
+        </div>
+    </div>
+
+    <div class="testimonial-content">
+        <div class="testimonial-1">
+            <h4>Maicol Hernandez</h4>
+            <img src="Imagenes/MEN.jpg" alt="" width="200" class="img-1" height="300">
+            <p>
+                Nunca había encontrado un equipo veterinario tan dedicado y cariñoso. Desde la recepción hasta la despedida, cada paso del proceso fue excepcional. Lo que distingue a
+                 esta clínica es su misión de apoyar no solo a las mascotas de familia, sino también a los animales menos afortunados de nuestra comunidad. Su pasión por hacer una 
+                 diferencia es evidente, y eso les ha ganado un cliente de por vida en mí. Altamente recomendado para cualquier persona que valore el cuidado genuino y experto
+                  para su mascota.
+            </p>
+            <img src="Imagenes/starts.png" alt="" class="img-1">
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer class="footer">
+<div class="container">
+    <div class="row">
+        <div class="footer-col" id="contacto">
+
+            <h4>Visitanos</h4>
+            <ul>
+                <li><a href="#">Mis Patitas Vet Shop</a></li>
+                <li><a href="#">Cra 13 # 4-40</a></li>
+                <li><a href="#">3134401074</a></li>
+                <li><a href="#">Lejanias Meta</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Informacion</h4>
+            <ul>
+                <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contactanos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>¡Siguenos!</h4>
+            <div class="social-links">
+                <a href="https://www.facebook.com/MaxDesing.co/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/marlonperez_zzz/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/marlon-perez-c//" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+</footer>
+   
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
