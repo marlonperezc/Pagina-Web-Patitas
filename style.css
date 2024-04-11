@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-
+/* Estilos para el cuerpo del documento */
 * {
     margin: 0;
     padding: 0;
@@ -12,11 +12,11 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-
+/* Estilos para imágenes */
 img {
     max-width: 100%;
 }
-
+/* Contenedor principal */
 .container {
     max-width: 1200px;
     margin: auto;
@@ -28,7 +28,7 @@ img {
     background-color: #EFF3F4;
     padding: 35px 0 0 0;
 }
-
+/* estilos para menu, texto y posicion */
 .menu {
     background: #eff3f4;
     top: 0;
@@ -38,25 +38,25 @@ img {
     align-items: center;
     justify-content: space-between;
 }
-
+/* menu estatico al avanzar en la pagina */
 .static-menu {
     position: fixed;
     background: #eff3f4;
     width: 100%;
 }
-
+/* medidas para logo */
 .logo {
     font-size: 25px;
     color: #9BCE21;
     text-transform: uppercase;
     font-weight: 800;
 }
-
+/* Estilos de la barra de navegación */
 .menu .navbar ul li {
     position: relative;
     float: left;
 }
-
+/* metodo para etiques o secciones */
 .menu .navbar ul li a {
     font-size: 13px;
     padding: 20px;
@@ -86,7 +86,7 @@ img {
 .sub menu {
     position: relative;
 }
-
+/* modificadores del carrito de compras */
 .submenu #carrito {
     display: none;
 }
@@ -111,7 +111,7 @@ th,
 td {
     color: #FFFFFF;
 }
-
+/* estilos para boton del carrito de compras borrar */
 .borrar {
     background-color: #9BCE21;
     border-radius: 50%;
@@ -127,12 +127,12 @@ td {
     align-items: center;
     padding: 0 60px 0;
 }
-
+/* rellena el espacio sobrante de la barra de navegacion o secciones */
 .fill-100 {
     max-width: 100%;
     background: #eff3f4;
 }
-
+/* estilos de texto header */
 .header-txt {
     flex-basis: 50%;
     margin-right: 25px;
@@ -159,7 +159,7 @@ span {
     color: #515557;
     margin-bottom: 35px;
 }
-
+/* estilos para botones de la pagina */
 .butons {
     display: flex;
 }
@@ -172,7 +172,7 @@ span {
     color: #FFFFFF;
     margin-bottom: 100px;
 }
-
+/* estilos de imagen para la seccion principal medidas y posicion */
 .header-img {
     flex-basis: 50%;
     text-align: center;
@@ -182,7 +182,7 @@ span {
     height: 550px;
 
 }
-
+/*posicion, distribucion de espacio en elementos y interlineado o separacion de elementos */
 .oferts {
     padding: 100px 0;
     display: flex;
@@ -195,7 +195,7 @@ span {
     display: flex;
     justify-content: space-between;
 }
-
+/* estilos de imagen para seccion de ofertas */
 .ofert-1,
 .ofert-img {
     flex-basis: 50%;
@@ -267,7 +267,7 @@ span {
     font-size: 40px;
     color: #111419;
 }
-
+/* estilos de imagen para secciones de productos, bordes, posicion, tamaño, etc. */
 .section .box-container {
     margin-top: 55px;
     display: grid;
@@ -336,9 +336,7 @@ section .product-txt h3 {
     padding: 8px 25px;
     border-radius: 5px;
 }
-
-
-
+/* estilos para seccion testimonios, estilos para imagenes, posicion, tamaño, espacio entre elementos. Color entre otros. */
 .testimonial {
     padding: 100px 0;
     text-align: center;
@@ -367,6 +365,7 @@ section .product-txt h3 {
     padding: 23px;
     
 }
+/* modificador de tamaño de estrellas img */
 .testimonial .testimonial-1 .img-1[src="Imagenes/starts.png"] {
     width: 250px;
     height: 100px;
@@ -374,7 +373,7 @@ section .product-txt h3 {
 }
 
 
-
+/* modificador de tamaño de perfil de usuario o review, estilo circular con borde delgado */
 .testimonial .testimonial-1 .img-1[src="Imagenes/WOMAN.jpg"] {
     border-radius: 50%;
     border: 2px solid #9BCE21;
@@ -388,7 +387,8 @@ section .product-txt h3 {
 
 
 
-
+/* modificador pie de pagina con estilo de color de fondo, elimina caracteristica de lista, modifica posicion y 
+espacio entre elementos, estilos para botones de redes sociales y otros */
 .footer {
     margin: 0;
     padding: 70px 0;
@@ -491,7 +491,7 @@ ul {
 .link a:hover {
     color: #9BCE21
 }
-
+/* modificador o estilo para dispositivos moviles responsive desde 375 px en adelante */
 @media (max-width:375px) {
     .media {
         padding: 20px;
@@ -577,7 +577,7 @@ ul {
         margin-bottom: 25px;
     }
 
-    /*responsive*/
+    /*responsive dispostivos como tablets y otros*/
     @media(max-width: 767px) {
         .footer-col {
             width: 50%;

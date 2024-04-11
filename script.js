@@ -1,27 +1,31 @@
+// Acceso a elementos del DOM
 const carrito = document.getElementById('carrito');
 const elementos1 = document.querySelectorAll('.agregar-carrito');
 const lista = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 
+// Escuchar clicks en botones de agregar y configurar el carrito
 elementos1.forEach(elemento => {
     elemento.addEventListener('click', comprarElemento)
 });
 cargarEventListeners();
 
 function cargarEventListeners() {
+    // Eliminar elemento del carrito
     carrito.addEventListener('click', eliminarElemento);
+    // Vaciar todo el carrito
     vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 }
 
+// Agregar elemento al carrito
 function comprarElemento(e) {
-    console.log(e);
+    e.preventDefault();
     const elemento = e.target.parentElement.parentElement;
-    console.log(elemento);
     const infoElemento = leerDatosElemento(elemento);
     insertarCarrito(infoElemento);
 }
 
-
+// Obtener datos del producto
 function leerDatosElemento(elemento) {
     return {
         imagen: elemento.querySelector('img').src,
@@ -31,18 +35,15 @@ function leerDatosElemento(elemento) {
     };
 }
 
+// Mostrar producto en el carrito
 function insertarCarrito(elemento) {
     const row = document.createElement('tr');
     row.innerHTML = `
     <td>
-        <img src="${elemento.imagen}" width="100" height="150px">
+        <img src="${elemento.imagen}" width="100">
     </td>
-    <td>
-        ${elemento.titulo}
-    </td>
-    <td>
-        ${elemento.precio}
-    </td>
+    <td>${elemento.titulo}</td>
+    <td>${elemento.precio}</td>
     <td>
         <a href="#" class="borrar" data-id="${elemento.id}">X</a>
     </td>
@@ -50,22 +51,16 @@ function insertarCarrito(elemento) {
     lista.appendChild(row);
 }
 
+// Quitar un producto del carrito
 function eliminarElemento(e) {
-    e.preventDefault();
-    let elementoId;
-
     if (e.target.classList.contains('borrar')) {
         e.target.parentElement.parentElement.remove();
-        const elemento = e.target.parentElement.parentElement;
-        elementoId = elemento.querySelector('a').getAttribute('data-id'); // Corregido: obtener correctamente el ID
     }
 }
 
-
-
+// Limpiar el carrito completamente
 function vaciarCarrito() {
     while (lista.firstChild) {
         lista.removeChild(lista.firstChild);
     }
-    return false;
 }
